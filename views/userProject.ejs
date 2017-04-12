@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/css/master.css">
+  </head>
+  <body>
+      <% include header.ejs %>
+      <div class="user-project">
+        <% for(var i=0; i<userProject.length; i++) { %>
+          <a href=<%= '/project/' %><%= userProject[i].id %>>
+            <%= userProject[i].name %>
+          </a>
+        <% } %>
+    </div>
+  </body>
+</html>

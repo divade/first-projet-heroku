@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>users</title>
+  </head>
+  <body>
+    <div id="list">
+      <% for (let user of userHandler){%>
+        <div class="flex">
+          <div class="ui card flex">
+            <div class="content">
+
+              <a class="header"><%= user.nom %> <%= user.prenom %></a>
+            </div>
+          </div>
+        </div>
+      <% } %>
+    </div>
+  </body>
+</html>
